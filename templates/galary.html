@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='xyz/galary.css')}}">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <h3>Upload Files</h3>
+      <div class="drop_box">
+        <header>
+          <h4>Select File here</h4>
+        </header>
+        <p>Files Supported: JPG,JPEG,PNG</p>
+
+          <input type="file" hidden accept=".jpg,.png,.jpeg" id="fileID" style="display:none;">
+          <button class="btn" type="submit">Choose File</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="{{ url_for('static',filename='jss/galary.js')}}"></script>
+  
+
+
+</body>
+
+</html>
